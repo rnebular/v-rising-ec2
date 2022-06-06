@@ -16,9 +16,9 @@ Update-SteamApp -AppID 1829350 -Path 'C:\v-rising'
 `~\AppData\LocalLow\Stunlock Studios\VRisingServer\Settings`
 
 1. Edit `ServerHostSettings.json` file and update the password to join the server.
-1. Setup `start_server.ps1` script to start when Windows boots. (Local Policy Editor)
+1. Login and run `start_server.ps1` script. For now, this seems to need to be an interactive startup. Still investigating using unattended at boot.
 
-The server should now automatically update the game via SteamCMD and then start the Game Server.
+The script should automatically update the game via SteamCMD and then start the Game Server executable.
 
 References:
 - https://github.com/StunlockStudios/vrising-dedicated-server-instructions
